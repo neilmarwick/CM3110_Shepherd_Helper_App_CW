@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">CM3110 App 2004752 2</string>
+
+    <string name="goBackBtnTxt">Go Back</string>
+    <!--Strings for StartMenuActivity.xml-->
+    <string name="headerString">Shepherd Helper</string>
+    <string name="underHeaderString">Select an option</string>
+    <string name="openCalculatorString">Calculator</string>
+    <string name="openSheepRecyclerViewString">View My Sheep</string>
+    <string name="notificationsString">Receive Notifications</string>
+    <!--End of strings for StartMenuActivity.xml-->
+
+    <!--Strings for activity_calculator.xml -->
+    <string name="calculatorHeaderString">Calculator</string>
+    <string name="question1String">How much field space will you need for your amount of sheep? Enter a value below then press submit</string>
+    <string name="numSheepInputString">Enter number of sheep here</string>
+    <string name="question1BtnString">Submit</string>
+    <string name="calculateQ1BtnString">Find Answer</string>
+    <string name="question1HintString">Enter number of sheep</string>
+
+
+    <string name="question2AnswerString">What dosage of Heptavac P Plus vaccine does your sheep require? Enter a value below then press submit</string>
+    <string name="question2HintString">Enter weight of a sheep in kg</string>
+    <string name="question2BtnString">Submit</string>
+    <!--End of strings for activity_calculator.xml -->
+
+    <!--Start of strings for each of the rows in the Recycler View-->
+
+    <string name="sheep_tag_number">1270</string>
+    <string name="sheep_breed">Blue Texel</string>
+    <string name="sheep_gender">Male</string>
+
+    <string-array name="sheep_tag_number_txt">
+        <item>1270</item>
+        <item>1323</item>
+        <item>4324</item>
+        <item>3245</item>
+        <item>3223</item>
+        <item>3235</item>
+        <item>8978</item>
+        <item>4252</item>
+        <item>3455</item>
+        <item>7823</item>
+        <item>3252</item>
+    </string-array>
+
+    <string-array name="sheep_breed_txt">
+        <item>Blue Texel</item>
+        <item>Cheviot</item>
+        <item>Dorset</item>
+        <item>Hampshire</item>
+        <item>Southdown</item>
+        <item>Polypay</item>
+        <item>Mouflon</item>
+        <item>St Croix</item>
+        <item>Icelandic</item>
+        <item>Shetland</item>
+        <item>Karakul</item>
+    </string-array>
+
+    <string-array name="sheep_gender_txt">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <!--End of strings for each of the rows in the Recycler View-->
+
+    <!--Other strings for activity_recycler_view.xml-->
+   <string name="clickInstructionTxtString">Click on each sheep to read more</string>
+
+    <!--End of other strings for activity_recycler_view.xml-->
+
+
+
+</resources>
