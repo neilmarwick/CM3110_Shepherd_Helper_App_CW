@@ -5,14 +5,12 @@ public class SheepModel {
     String sheepTagNumber;
     String sheepBreed;
     String sheepGender;
-   /*int image;*/
 
     //constructor for each of the variables
-    public SheepModel(String sheepTagNumber, String sheepBreed, String sheepGender/*, int image*/) {
+    public SheepModel(String sheepTagNumber, String sheepBreed, String sheepGender) {
         this.sheepTagNumber = sheepTagNumber;
         this.sheepBreed = sheepBreed;
         this.sheepGender = sheepGender;
-        /*this.image = image;*/
     }
     //get methods
     public String getSheepTagNumber() {
@@ -26,8 +24,5 @@ public class SheepModel {
     public String getSheepGender() {
         return sheepGender;
     }
-/*
-    public int getImage() {
-        return image;
-    } */
+
 }

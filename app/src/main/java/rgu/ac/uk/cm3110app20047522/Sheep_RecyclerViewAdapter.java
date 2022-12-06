@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Sheep_RecyclerViewAdapter extends RecyclerView.Adapter<Sheep_RecyclerViewAdapter.MyViewHolder> {
-    /*private final RecyclerViewInterface recyclerViewInterface;*/
 
     //context required for inflating the layout
     Context context;
@@ -21,10 +20,9 @@ public class Sheep_RecyclerViewAdapter extends RecyclerView.Adapter<Sheep_Recycl
     ArrayList<SheepModel> sheepModels;
 
     //Gets values for the above variables
-    public Sheep_RecyclerViewAdapter(Context context, ArrayList<SheepModel> sheepModels/*, RecyclerViewInterface recyclerViewInterface*/){
+    public Sheep_RecyclerViewAdapter(Context context, ArrayList<SheepModel> sheepModels){
         this.context = context;
         this.sheepModels = sheepModels;
-        /*this.recyclerViewInterface = recyclerViewInterface;*/
     }
 
 
@@ -34,7 +32,7 @@ public class Sheep_RecyclerViewAdapter extends RecyclerView.Adapter<Sheep_Recycl
     public Sheep_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.recycler_view_row, parent, false);
-        return new Sheep_RecyclerViewAdapter.MyViewHolder(view/*, recyclerViewInterface*/);
+        return new Sheep_RecyclerViewAdapter.MyViewHolder(view);
     }
 
     @Override
@@ -45,41 +43,26 @@ public class Sheep_RecyclerViewAdapter extends RecyclerView.Adapter<Sheep_Recycl
         holder.tagNumberTV.setText(sheepModels.get(position).getSheepTagNumber());
         holder.breedTV.setText(sheepModels.get(position).getSheepBreed());
         holder.genderTV.setText(sheepModels.get(position).getSheepGender());
-       /* holder.imageView.setImageResource(sheepModels.get(position).getImage());*/
     }
 
     @Override
     public int getItemCount() {
-        //this method returns the number of items we want to show in the RecyclerView (it's 10)
         return sheepModels.size();
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-        //gets all the views from recycler_view_row layout file and assigns them to variables
-        /*ImageView imageView;*/
-        //TV = TextView
+
         TextView tagNumberTV, breedTV, genderTV;
 
-        public MyViewHolder(@NonNull View itemView/*, RecyclerViewInterface recyclerViewInterface*/) {
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            /*imageView = itemView.findViewById(R.id.imageView);*/
+
             tagNumberTV = itemView.findViewById(R.id.textView);
             breedTV = itemView.findViewById(R.id.textView2);
             genderTV = itemView.findViewById(R.id.textView3);
 
-           /* itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(recyclerViewInterface != null){
-                        int pos = getAdapterPosition();
 
-                        if(pos != RecyclerView.NO_POSITION){
-                            recyclerViewInterface.whenSheepClicked(pos);
-                        }
-                    }
-                }
-            });*/
         }
     }
 }
